@@ -1,0 +1,89 @@
+POST http://localhost:8080/login
+Content-Type: application/json
+Accept: text/html
+
+{
+  "username": "user1",
+  "password": "pass1"
+}
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+Accept: text/html
+
+{
+  "username": "user2",
+  "password": "pass1"
+}
+
+###
+
+POST http://localhost:8080/reg
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "json-user",
+  "password": "json-user-pass"
+}
+
+###
+
+POST http://localhost:8080/create-task
+Content-Type: application/json
+Accept: application/json
+
+{
+  "projectId": 6,
+  "taskTitle": "test HTTP CLIENT2",
+  "taskText": "tttttttttt2",
+  "priority": 1,
+  "deadline": "2022-05-27T15:40"
+}
+
+###
+
+POST http://localhost:8080/remove-task
+Content-Type: application/json
+Accept: application/json
+
+{
+  "projectId": 5,
+  "taskId": 134
+}
+
+###
+
+POST http://localhost:8080/edit-task
+Content-Type: application/json
+Accept: application/json
+
+{
+  "projectId": 6,
+  "taskId": 140,
+  "taskTitle": "TEST EDIT TASK"
+}
+
+###
+
+POST http://localhost:8080/edit-project
+Content-Type: application/json
+Accept: application/json
+
+{
+  "projectId": 1,
+  "projectName": "edited1"
+}
+
+###
+
+POST http://localhost:8080/create-project
+Content-Type: application/json
+Accept: application/json
+
+{
+  "userId": 1,
+  "projectName": "CREATED FROM HTTP"
+}

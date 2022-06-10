@@ -1,0 +1,348 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+input[type="text" i] {
+    padding: 1px 2px;
+    border-radius: 5px;
+    border-color: #d9125e;
+    border-style: solid;
+    border-width: 2px;
+}
+
+input[type="datetime-local" i] {
+    padding-inline-start: 1px;
+    cursor: default;
+    overflow: hidden;
+    border-radius: 100px;
+    border-color: #d9125e;
+    border-width: 2px;
+    border-style: solid;
+}
+
+select {
+    border-radius: 100px;
+    background: white;
+    overflow: visible !important;
+    border-color: #d9125e;
+    border-width: 2px;
+}
+
+@media screen and (max-height: 450px) {
+    .project_list {
+        padding-top: 15px;
+    }
+
+    .project_list a {
+        font-size: 18px;
+    }
+}
+
+.project_list {
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: fixed;
+    width: 215px;
+}
+
+#user-name {
+    float: left;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+#user-id {
+    float: left;
+    color: black;
+    text-align: center;
+    /*font-weight: bold;*/
+    /*font-size: 24px;*/
+    /*padding-top: 15px;*/
+    /*padding-bottom: 30px;*/
+}
+
+.project_list a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 0px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/*.project_list a {*/
+/*    padding: 6px 8px 6px 16px;*/
+/*    text-decoration: none;*/
+/*    font-size: 25px;*/
+/*    color: black;*/
+/*    display: block;*/
+/*}*/
+
+.project_list a:hover {
+    background-color: #d9125e;
+    color: white;
+}
+
+.project_tasks {
+    margin-left: 220px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+    border-left: 5px solid #d9125e;
+}
+
+.project_name {
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 15px;
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+#edit-project-button {
+    background-image: url(pencil-button.png);
+    background-size: 17px;
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    background-position-x: 4px;
+    background-position-y: 4px;
+    background-repeat: no-repeat;
+    border-color: #d9125e;
+    border-width: 2px;
+    border-style: solid;
+    background-color: white;
+    margin-left: 5px;
+}
+
+#remove-project-button {
+    background-image: url(remove-button.png);
+    background-size: 21px;
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    background-position-x: 3px;
+    background-position-y: 3px;
+    background-repeat: no-repeat;
+    border-color: #d9125e;
+    border-width: 2px;
+    border-style: solid;
+    background-color: white;
+    margin-left: 5px;
+}
+
+.task {
+    border: 2px solid rgb(199, 199, 199);
+    padding: 5px;
+    border-radius: 15px;
+
+    display: block;
+    margin: 5px;
+    cursor: pointer;
+    word-wrap: break-word;
+}
+
+.task:hover {
+    border: 2px solid #d9125e;
+    box-shadow: 5px 5px 5px rgba(168, 65, 71, 0.15);
+}
+
+.task_completed {
+    border: 2px solid #37b077;
+    padding: 5px;
+    border-radius: 15px;
+    display: block;
+    margin: 5px;
+    cursor: pointer;
+    word-wrap: break-word;
+}
+
+.task_properties {
+    display: flex;
+    font-size: 11pt;
+    color: #646464;
+}
+
+.task_title {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 13pt;
+}
+
+.task_text {
+    margin: auto 10px;
+    cursor: pointer;
+    font-size: 12pt;
+}
+
+.task_deadline {
+    margin: auto 10px;
+    cursor: pointer;
+}
+
+.task_overdue_deadline {
+    margin: auto 10px;
+    cursor: pointer;
+    color: white;
+    background-color: #d9125e;
+}
+
+
+
+.task_priority {
+    margin: auto 10px;
+    cursor: pointer;
+}
+
+.task_button_edit {
+    border-radius: 100px;
+    border-color: #818181;
+    border-style: solid;
+    border-width: 2px;
+    background-color: white;
+}
+
+.task_button_remove {
+    border-radius: 100px;
+    margin-left: 5px;
+    border-color: #818181;
+    border-style: solid;
+    border-width: 2px;
+    background-color: white;
+}
+
+.add_task {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin-left: 220px;
+    padding: 5px 5px 10px 10px;
+    border-left: 5px solid #d9125e;
+    border-bottom: 5px solid #d9125e;
+    margin-right: 50px;
+    border-bottom-left-radius: 30px;
+}
+
+.add_task_text {
+    width: 99%;
+}
+
+.add_task_title {
+    width: 99%;
+}
+
+.add_task_button {
+    width: 50%;
+    border-radius: 5px;
+    border-color: #d9125e;
+    /*font-weight: bold;*/
+    background-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#display-add-task-button {
+    margin-left: 240px;
+    width: 80%;
+    height: 30px;
+    border-radius: 100px;
+}
+
+#add-task-bottom-title {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+}
+
+#hide-add-task-button {
+    border-radius: 200px;
+
+    margin-left: 10px;
+    font-weight: bold;
+    border-color: #d9125e;
+    background-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+
+.edit_task {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin-left: 220px;
+    padding: 5px 5px 10px 10px;
+    border-left: 5px solid #d9125e;
+    border-bottom: 5px solid #d9125e;
+    margin-right: 50px;
+    border-bottom-left-radius: 30px;
+}
+
+.edit_task_text {
+    width: 99%;
+}
+
+.edit_task_title {
+    width: 99%;
+}
+
+.edit_task_button {
+    width: 50%;
+    border-radius: 5px;
+    border-color: #d9125e;
+    /*font-weight: bold;*/
+    background-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#display-edit-task-button {
+    margin-left: 240px;
+    width: 80%;
+    height: 30px;
+    border-radius: 100px;
+}
+
+#edit-task-bottom-title {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+}
+
+#hide-edit-task-button {
+    border-radius: 200px;
+
+    margin-left: 10px;
+    font-weight: bold;
+    border-color: #d9125e;
+    background-color: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#add-project-button {
+    display: inline-block;
+    margin-left: 240px;
+    width: 80%;
+    height: 30px;
+    border-radius: 100px;
+}
+
+#add-project {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    margin-left: 220px;
+    padding: 5px 5px 10px 10px;
+}
